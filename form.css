@@ -32,6 +32,14 @@ body{
    margin: 30px 0;
    position: relative;
 }
+.input-group_label{
+    position: absolute;
+    top: 50%; 
+    transform:translateY(-50%);
+    left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
 input[type= 'text'],
 input[type= 'email'],
 input[type = 'tel']{
@@ -43,14 +51,7 @@ input[type = 'tel']{
     color: whitesmoke;
     font-size: 18px;
 }
-.input-group_label{
-    position: absolute;
-    top: 50%; 
-    transform:translateY(-50%);
-    left: 5px;
-    font-size: 20px;
-    font-weight: 600;
-}
+
 
 .icons{
     position: absolute;
@@ -58,11 +59,11 @@ input[type = 'tel']{
     top: 12px;
     
 }
-/* input:focus~label,
+input:focus~label,
 input:valid~label{
     top: -5px;
     transition: .5s;
-} */
+}
 .input-group_text{
     width: 100%;
     position: relative;
