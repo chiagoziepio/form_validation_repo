@@ -8,28 +8,39 @@
     <title>FORM VALIDATION</title>
 </head>
 <body>
-    <form action="" class="form_validate">
+    <div class="form-container">
+        <form action="" class="form_validate">
 
-        <div class="input-group">
-           <span class="icons"><i class="fa-solid fa-user"></i></span>
-           <input type="text" name="" id="fullname" class="fullname">
-           <label for="fullname" class="input-group_label">Fullname</label>
+            <div class="input-group">
+            <span class="icons"><i class="fa-solid fa-user"></i></span>
+            <input type="text" name="" id="fullname" class="fullname">
+            <label for="fullname" class="input-group_label">Fullname</label>
+            <span class="error nameError"></span>
+            </div>
+            <div class="input-group">
+            <span class="icons"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" name="" id="email" class="email">
+            <label for="email" class="input-group_label">Email</label>
+            <span class="error emailError"></span>
+            </div>
+            <div class="input-group">
+            <span class="icons"><i class="fa-solid fa-phone"></i></span>
+            <input type="tel" name="" id="tel" class="tel">
+            <label for="tel" class="input-group_label">Phone-number</label>
+            <span class="error telError"></span>
+            </div>
+        <div class="input-group_text">
+            <textarea name="input-group_textearea" id="" cols="40" rows="8"></textarea>
+            <span class=" error textError"></span>
         </div>
-        <div class="input-group">
-           <span class="icons"><i class="fa-solid fa-envelope"></i></span>
-           <input type="email" name="" id="email" class="email">
-           <label for="email" class="input-group_label">Email</label>
+        <div class="input-group_btn">
+            <button type="submit"
+            class="input-group_submitBtn">Submit</button>
+            <span class="errors formError"></span>
         </div>
-        <div class="input-group">
-           <span class="icons"><i class="fa-solid fa-phone"></i></span>
-           <input type="tel" name="" id="tel" class="tel">
-           <label for="tel" class="input-group_label">Phone-number</label>
-        </div>
-       <div class="input-group">
-        <textarea name="input-group_textearea" id="" cols="40" rows="8"></textarea>
-       </div>
-       <button type="submit" class="input-group_submitBtn">Submit</button>
-    </form> 
+        
+        </form> 
+    </div>    
     <script src="form.js"></script>
 </body>
 </html>
