@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/12da1ae4c8.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/12da1ae4c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="form.css">
     <title>FORM VALIDATION</title>
 </head>
 <body>
     <div class="form-container">
         <h1 class="title">FORM VALIDATION</h1>
-        <form action="" class="form_validate">
+        <form action="../html/gridpro.html" method="" class="form_validate">
 
             <div class="input-group">
             <span class="icons"><i class="fa-solid fa-user"></i></span>
-            <input type="text" name="" id="fullname" class="fullname inputs" required>
+            <input type="text" name="" id="fullname" class="fullname inputs" onkeyup="validateFullname()">
             <label for="fullname" class="input-group_label">Fullname</label>
             <span class="error nameError"></span>
             </div>
             <div class="input-group">
             <span class="icons"><i class="fa-solid fa-envelope"></i></span>
-            <input type="email" name="" id="email" class="email inputs" required>
+            <input type="text" name="" id="email" class="email inputs" onkeyup="validateMail()">
             <label for="email" class="input-group_label">Email</label>
             <span class="error emailError"></span>
             </div>
             <div class="input-group">
             <span class="icons"><i class="fa-solid fa-phone"></i></span>
-            <input type="tel" name="" id="tel" class="tel inputs " required>
+            <input type="tel" name="" id="tel" class="tel inputs " onkeyup="validateTel()">
             <label for="tel" class="input-group_label">Phone-number</label>
             <span class="error telError"></span>
             </div>
