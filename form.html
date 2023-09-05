@@ -31,12 +31,12 @@
             <span class="error telError"></span>
             </div>
             <div class="input-group_text">
-                <textarea name="input-group_textearea" id="" cols="40" rows="8" class="formtext"></textarea>
+                <textarea name="input-group_textearea" id="" cols="40" rows="8" class="formtext" onkeyup="validateText()"></textarea>
                 <span class=" error textError"></span>
             </div>
             <div class="input-group_btn">
                 <button type="submit"
-                class="input-group_submitBtn">Submit</button>
+                class="input-group_submitBtn" onclick="return validadteAll()">Submit</button>
                 <span class="errors formError"></span>
             </div>
         
